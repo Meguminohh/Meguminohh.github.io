@@ -71,10 +71,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-ceshi" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Second-Article" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/02/05/ceshi/" class="article-date">
-  <time class="dt-published" datetime="2021-02-05T05:06:31.000Z" itemprop="datePublished">2021-02-05</time>
+    <a href="/2021/02/05/Second-Article/" class="article-date">
+  <time class="dt-published" datetime="2021-02-05T05:26:57.850Z" itemprop="datePublished">2021-02-05</time>
 </a>
     
   </div>
@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/02/05/ceshi/">ceshi</a>
+      <a class="p-name article-title" href="/2021/02/05/Second-Article/">Hexo图片加载失败?</a>
     </h1>
   
 
@@ -93,11 +93,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <img src="/2021/02/05/ceshi/ip.png" class title="ip">
+        <p>在给自己的第一篇文章上传图片后，打开网站却发现图片没法正常加载。</p>
+<img src="/2021/02/05/Second-Article/img_wrong.png" class title="wrongImg"><br>
+<p>急急忙忙上网找大神的解决方法。在多次尝试失败后终于找到一款能正确解决我的问题的方法，赶紧记录下来。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><ol>
+<li>找到Hexo下的_config.yml文件里的post_asset_folder，把false改为true。</li>
+<li>安装插件：npm install <a target="_blank" rel="noopener" href="https://github.com/7ym0n/hexo-asset-image">https://github.com/7ym0n/hexo-asset-image</a> –save。</li>
+<li>在.md文件里插入图片时用这种格式：</li>
+</ol>
+<p>这样图片就能够正常显示出来了😀</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://meguminohh.github.io/2021/02/05/ceshi/" data-id="ckkrtx1iw0000ocw9a0lfc3k4" data-title="ceshi" class="article-share-link">Share</a>
+      <a data-url="http://meguminohh.github.io/2021/02/05/Second-Article/" data-id="ckkrv63lv0001z8w92h8kc7cv" data-title="Hexo图片加载失败?" class="article-share-link">Share</a>
       
       
       
@@ -109,9 +118,9 @@
 
 
   
-    <article id="post-first-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-First_Article" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2021/01/21/first-test/" class="article-date">
+    <a href="/2021/01/21/First_Article/" class="article-date">
   <time class="dt-published" datetime="2021-01-21T13:39:51.676Z" itemprop="datePublished">2021-01-21</time>
 </a>
     
@@ -123,7 +132,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/01/21/first-test/">Github Page页面无法访问?</a>
+      <a class="p-name article-title" href="/2021/01/21/First_Article/">Github Page页面无法访问?</a>
     </h1>
   
 
@@ -131,64 +140,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>参考网上找的博客搭建教程<a target="_blank" rel="noopener" href="https://www.cnblogs.com/shwee/p/11421156.html">https://www.cnblogs.com/shwee/p/11421156.html</a><br><br>按步骤做到部署文章到github仓库后，github pages无法访问…</p>
+        <p>参考网上找的博客搭建教程<a target="_blank" rel="noopener" href="https://www.cnblogs.com/shwee/p/11421156.html">https://www.cnblogs.com/shwee/p/11421156.html</a><br><br>规规矩矩按步骤做到部署文章到github仓库后，满怀期待的打开自己的网站，却发现github pages无法访问… 心里万只草泥马跑过。</p>
 <h2 id="我的解决方式："><a href="#我的解决方式：" class="headerlink" title="我的解决方式："></a>我的解决方式：<br></h2><ol>
-<li>去<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">IP地址查询网站</a>查询自己博客的IP地址，如：xxx.github.io<br><br>得到以下IP：<img src="https://github.com/Meguminohh/Meguminohh.github.io/blob/main/2021/01/21/first-test/img/ip.png" alt="ip"></li>
-<li>修改host文件，如：ip xxx.github.io<br><br><img src="https://github.com/Meguminohh/Meguminohh.github.io/blob/main/2021/01/21/first-test/img/host.png" alt="host"></li>
+<li>去<a target="_blank" rel="noopener" href="http://tool.chinaz.com/dns">IP地址查询网站</a>查询自己博客的IP地址，如：xxx.github.io<br><br>得到以下IP：<img src="/2021/01/21/First_Article/ip.png" class title="ip"></li>
+<li>修改host文件，如：ip xxx.github.io<br><img src="/2021/01/21/First_Article/host.png" class title="host">
+
+</li>
 </ol>
 <p>这样github pages就能成功访问了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://meguminohh.github.io/2021/01/21/first-test/" data-id="ckk6ylbtk0000gcw949cg4c7b" data-title="Github Page页面无法访问?" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/12/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2020-12-20T14:43:13.236Z" itemprop="datePublished">2020-12-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/12/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://meguminohh.github.io/2020/12/20/hello-world/" data-id="ckk4242hd0000qow94g5v32zw" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://meguminohh.github.io/2021/01/21/First_Article/" data-id="ckkrv63lr0000z8w98ei40ad0" data-title="Github Page页面无法访问?" class="article-share-link">Share</a>
       
       
       
@@ -218,7 +182,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
     </div>
   </div>
 
@@ -231,15 +195,11 @@
       <ul>
         
           <li>
-            <a href="/2021/02/05/ceshi/">ceshi</a>
+            <a href="/2021/02/05/Second-Article/">Hexo图片加载失败?</a>
           </li>
         
           <li>
-            <a href="/2021/01/21/first-test/">Github Page页面无法访问?</a>
-          </li>
-        
-          <li>
-            <a href="/2020/12/20/hello-world/">Hello World</a>
+            <a href="/2021/01/21/First_Article/">Github Page页面无法访问?</a>
           </li>
         
       </ul>
